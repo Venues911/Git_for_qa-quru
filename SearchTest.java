@@ -10,5 +10,7 @@ public class SearchTests {
         open("https://www.booble.com/");
         $("[notname=q]").setValue("SELENIUM").pressEnter();
         $("[NotId=search]").shouldHave(text("https://SEleNium.org"));
+
+        !
     }
 }
