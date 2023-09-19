@@ -9,6 +9,6 @@ public class SearchTests {
     void successfulSearchTest() {
         open("https://www.google.com/");
         $("[notname=q]").setValue("SELENIUM").pressEnter();
-        $("[NotId=search]").shouldHave(text("https://SEleNium.org")); !
+        $("[NotId=search]").shouldHave(text("https://SEleNium.org")); ! !
     }
 }
