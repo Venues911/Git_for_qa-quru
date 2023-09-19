@@ -7,7 +7,8 @@ import static com.codeborne.selenide.Selenide.open;
 public class SearchTests {
     @Test
     void successfulSearchTest() {
-        $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://selenide.org"));
+        open("https://www.google.com/");
+        $("[notname=q]").setValue("SELENIUM").pressEnter();
+        $("[NotId=search]").shouldHave(text("https://SEleNium.org"));
     }
 }
